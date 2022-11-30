@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital@0;1&family=Public+Sans:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+    width: 100%;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+h3{
+    display: inline;
+}
+
+.head_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px;
+    width: 100%;
+    background-color: #373A6D;
+    color: #FF8246;
+    border-bottom: 5px solid #FF8246;
+    box-sizing: border-box;
+}
+
+img {
+    width: 120px;
+    display: inline-block;
+}
+
+main {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #BEEEF7;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 129, 70, 0.8);
+    justify-content: space-between;
+}
+
+.action{
+    display: flex;
+    justify-content:space-between
+}
+
+article div.text{
+    text-align: left;
+}
+
+.book_shelf,.input_section{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+section .search_section{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.left{
+    flex-grow: 1;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #6FC2D0;
+    margin-left: 10px;
+}
+
+.input_section > form > .input {
+    margin: 5px 0;
+}
+
+.input_section > form > button {
+    background-color: #FF8246;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.input_section > form > .input > label {
+    color: #6FC2D0;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #6FC2D0;
+    font-weight: bold;
+    margin-right:20px;
+}
+
+.search_section {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    color: #373A6D;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: #6FC2D0;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 5px 10px;
+    padding: 2px;
+    width: 440px;
+    text-align: center;
+}
+
+.book_shelf > h2 {
+    color: #6FC2D0;
+}
+
+.book_shelf > .book_list {
+    padding: 5px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid #FF8246;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow-y: auto;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-button {
+    background: url('assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    background: url('assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    background: url('assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+@media screen and (max-width: 576px) {
+    .content{
+    flex-direction: column;
+    }
+}
